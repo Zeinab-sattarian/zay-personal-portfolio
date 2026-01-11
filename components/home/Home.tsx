@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from "react";
 
 /**
  *
- *  
+ *
  *
  * @param {String} title - Title of the component.
  * @param {String} subtitle - Subtitle of the component.
@@ -12,9 +12,9 @@ import { useState, useEffect, useRef } from "react";
 
 export default function Home() {
   const [texts] = useState({
-    title: "Zeinab satarian",
+    title: "Zeinab Satarian",
     subtitle:
-      " I am a recent graduate with a Bachelor of Science in Computer Engineering from Sharif University of Technology in Iran, the nation's leading institution for STEM fields, where I am ranked #1 among my peers with a GPA of 3.95/4.<br/><br/> I am committed to pursuing a Ph.D. in order to contribute to research and innovation in my own way.",
+      " I am a recent graduate with a Bachelor of Science in Computer Engineering from Sharif University of Technology in Iran, the nation's leading institution for STEM fields, where I am ranked #1 among my peers with a GPA of 18.8/20.",
   });
   return (
     <>
@@ -38,7 +38,7 @@ export default function Home() {
           position: relative;
           display: flex;
           padding: 12.235vw 12.103vw 10.978vw;
-          background-image: linear-gradient(to right, #3606ba , #6b0982);
+          background-image: linear-gradient(to right, #3606ba, #6b0982);
           padding-right: 0;
         }
 
@@ -156,7 +156,6 @@ export default function Home() {
           }
         }
 
-
         @media screen AND (min-width: 1921px) {
           .intro .content h1 {
             font-size: 4vw;
@@ -170,7 +169,6 @@ export default function Home() {
         }
 
         @media screen AND (max-width: 526px) {
-
           .intro {
             padding-left: 4vw;
             padding-right: 4vw;

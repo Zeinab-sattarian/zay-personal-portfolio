@@ -2,7 +2,7 @@ import { useState } from "react";
 
 /**
  *
- * 
+ *
  *
  * @param {String} title - Title of the component.
  * @param {String} subtitle - Subtitle of the component.
@@ -15,14 +15,13 @@ export default function Expertise() {
   const [texts] = useState({
     title: `<strong>Expertise,</strong> what I worked on before.`,
     subtitle: `I have worked on various projects and technologies, but these are the topics that I am most interested in`,
-    item1Title: `Data Analytics`,
+    item1Title: `Project Management`,
     item2Title: `Machine Learning and Computer Vision`,
-    item3Title: `FullStack Development`,
-    item1: `Created engaging Visualizations of data and identified existing patterns within data with R, Tableau, PowerBI and libraries such as pandas, Matplotlib and Seaborn.`,
+    item3Title: `Front End Development`,
+    item1: `Led and coordinated a team to successfully deliver projects using Agile and Scrum methodologies, improving productivity through stand-ups, task tracking, and collaborative problem-solving with tools like Jira.`,
     item2: `Worked and familiar with libraries such as OpenCV, Numpy, PyTorch, Python Imaging Library and TensorFlow.`,
-    item3: `Experienced in React, Django, WordPress, HTML/CSS, JavaScript and Docker.`,
+    item3: `Developed responsive and interactive user interfaces using React, implementing components, hooks, and state management to create seamless user experiences. Utilized modern JavaScript, JSX, and styling frameworks to deliver efficient and maintainable web applications.`,
   });
-
 
   return (
     <>
