@@ -5,6 +5,7 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { useState } from "react";
+import { useTranslation } from '../../hooks/useTranslation';
 
 /**
  *
@@ -15,26 +16,8 @@ import { useState } from "react";
  */
 
 export default function SimpleAccordion() {
-  const [questions] = useState({
-    questions: [
-      {
-        questionTitle: "Internship at Shahid Bahonar Copper Industries Co., ",
-        questionDescription:
-          'Worked on machine learning, computer vision, collaborative information visualization, front-end development, and data cleaning and processing.',
-      },
-      {
-        questionTitle: "Scrum Master and Project Manager ",
-        questionDescription:
-          'Led a team of 4 students using Agile and Scrum frameworks, enhancing project management and collaboration, improving productivity with regular stand-ups and tools like Jira, and ensuring timely delivery of high-quality project increments.',
-      },
-      {
-        questionTitle: "Teaching Assistant ",
-        questionDescription:
-          'Enhanced student learning by assisting in teaching Systems Analysis and Design and Advanced Computer Concepts II, creating presentations and training materials for over 70 students, designing and grading assignments and projects to ensure fair assessment, and improving teaching methods by 50% through recording and acting on student feedback.',
-      },
-      
-    ],
-  });
+  const t = useTranslation();
+  const [questions] = useState({ questions: t.experienceQuestions || [] });
 
   return (
     <>
