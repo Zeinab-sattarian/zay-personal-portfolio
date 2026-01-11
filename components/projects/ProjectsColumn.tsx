@@ -46,7 +46,7 @@ function ProjectsColumn() {
   return (
     <>
       <div className="column">
-        {texts.projects.map((item, i) => {
+        {projects.map((item, i) => {
           return (
             <div
               className="item"
