@@ -68,14 +68,14 @@
     },
     "weather": {
       "title": "<strong>Prédiction météo et retards de vol</strong> - Dashboard",
-      "desc": "Utilisation du ML pour améliorer la précision des prévisions météorologiques et création de tableaux de bord interactifs avec Microsoft Power BI. Pour la prédiction des retards de vol, utilisation des données historiques et d'algorithmes ML pour des prédictions précises.",
+      "desc": "Dans mon projet de prédiction météorologique, le machine learning a été utilisé pour améliorer la précision des modèles de prévision. En identifiant des motifs dans les données météorologiques historiques, mes modèles de ML ont permis de prédire les événements météorologiques avec une grande précision. En utilisant Microsoft Power BI, j'ai créé des tableaux de bord interactifs pour présenter les tendances météorologiques. De même, pour le projet de prédiction des retards de vol, des algorithmes de ML ont permis d'obtenir des prédictions précises."
       "type": "Tableau de bord",
       "techs": "PowerBI SQL Python"
     },
     "warehouse": {
       "title": "<strong>Simulation d'entrepôt</strong> - Système",
-      "desc": "Implémentation d'une simulation d'événements discrets pour un entrepôt, modélisant les arrivées et services clients; génération de tableaux détaillés et calcul des métriques de performance.",
-      "type": "Système",
+      "desc": "Implémentation d'une simulation à événements discrets pour un entrepôt discount, utilisant des lois exponentielles et normales pour modéliser respectivement les temps d'arrivée des clients et les temps de service. La simulation a généré un tableau détaillé retraçant les arrivées des clients, les temps d'attente, les durées de service et les temps d'inactivité des serveurs. Les principaux indicateurs de performance ont été calculés et affichés."
+    },
       "techs": "SimPy Python"
     },
     "findMe": "<strong>Retrouvez-moi,</strong> sur ces liens",
