@@ -2,8 +2,7 @@
   "workTitle": "<strong>Work,</strong> my previous projects.",
   "workSubtitle": "Here are the projects that I have worked on before.",
   "findMe": "Find Me, In these Links",
-  "scrollDown": "Scroll down"
-  ,
+  "scrollDown": "Scroll down",
   "nav": {
     "home": "home",
     "expertise": "expertise",
@@ -47,8 +46,7 @@
     "title": "<strong>Get in touch</strong> with me.",
     "emailButton": "Send me an Email",
     "cvButton": "My CV"
-  }
-  ,
+  },
   "work": {
     "vdas": {
       "title": "<strong>Volunteer Dental Appointment System</strong> Bachelore's Thesis",

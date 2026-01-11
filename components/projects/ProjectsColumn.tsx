@@ -1,12 +1,12 @@
 import React from "react";
-import { useTranslation } from '../../hooks/useTranslation'
+import { useTranslation } from "../../hooks/useTranslation";
 
 /**
  *
  * Projects Column from the Work section. Only for mobile
  *
  * @param {Array} projects - All the projects person has done. It has 6 attributes: backgroundColor for background color of the bubble. Type for type of the projects. Title and subtitle of the project. Techs the technologies projects has used. Links is a json with 2 attributes github and website.
- * 
+ *
  *
  */
 function ProjectsColumn() {
@@ -72,7 +72,6 @@ function ProjectsColumn() {
                   __html: item.techs,
                 }}
               ></span>
-              
             </div>
           );
         })}

@@ -54,7 +54,8 @@ export default function WorkDesktop() {
               <h1 dangerouslySetInnerHTML={{ __html: t.workTitle }}></h1>
               <p>{t.workSubtitle}</p>
               <div className="scroll-down">
-                {t.scrollDown}<div className="arrow"></div>
+                {t.scrollDown}
+                <div className="arrow"></div>
               </div>
             </div>
           </div>
@@ -166,7 +167,10 @@ export default function WorkDesktop() {
           </section>
           <section className="panel gray" ref={(e) => createPanelsRefs(e, 5)}>
             <div className="links">
-              <h1 style={{ color: "#00FFFF" }} dangerouslySetInnerHTML={{ __html: t.work.findMe }}></h1>
+              <h1
+                style={{ color: "#00FFFF" }}
+                dangerouslySetInnerHTML={{ __html: t.work.findMe }}
+              ></h1>
               <div className="box2">
                 <a href="https://github.com/Zeinab-sattarian">
                   <button>

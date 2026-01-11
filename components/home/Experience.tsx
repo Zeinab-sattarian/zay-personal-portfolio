@@ -1,9 +1,9 @@
 import SimpleAccordion from "components/shared/Accordion";
-import { useTranslation } from '../../hooks/useTranslation';
+import { useTranslation } from "../../hooks/useTranslation";
 
 /**
  *
- * 
+ *
  *
  * @param {String} title - Title of the component.
  * @param {String} subtitle - Subtitle of the component.
@@ -30,7 +30,7 @@ export default function Experience() {
           display: flex;
           flex-direction: column;
           padding: 4vw 5.103vw 2vw 10.317vw;
-          background-color: #00FFFF;
+          background-color: #00ffff;
         }
 
         section .media {

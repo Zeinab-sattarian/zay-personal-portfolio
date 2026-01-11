@@ -5,13 +5,13 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { useState } from "react";
-import { useTranslation } from '../../hooks/useTranslation';
+import { useTranslation } from "../../hooks/useTranslation";
 
 /**
  *
- * 
  *
- * @param {Array} questions - 
+ *
+ * @param {Array} questions -
  *
  */
 

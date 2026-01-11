@@ -2,8 +2,7 @@
   "workTitle": "<strong>Travail,</strong> mes projets précédents.",
   "workSubtitle": "Voici les projets sur lesquels j'ai travaillé auparavant.",
   "findMe": "Retrouvez-moi, sur ces liens",
-  "scrollDown": "Faites défiler"
-  ,
+  "scrollDown": "Faites défiler",
   "nav": {
     "home": "accueil",
     "expertise": "expertise",
@@ -47,8 +46,7 @@
     "title": "<strong>Contactez-moi</strong>",
     "emailButton": "Envoyez-moi un e-mail",
     "cvButton": "Mon CV"
-  }
-  ,
+  },
   "work": {
     "vdas": {
       "title": "<strong>Système de prise de rendez-vous dentaire bénévole</strong> - Mémoire",

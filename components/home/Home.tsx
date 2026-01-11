@@ -1,6 +1,6 @@
 import ImagePreview from "components/visual/AppPreview";
 import { useState } from "react";
-import { useTranslation } from '../../hooks/useTranslation';
+import { useTranslation } from "../../hooks/useTranslation";
 
 /**
  *

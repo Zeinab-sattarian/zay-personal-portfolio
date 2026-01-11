@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useTranslation } from '../../hooks/useTranslation';
+import { useTranslation } from "../../hooks/useTranslation";
 
 /**
  *
@@ -14,15 +14,15 @@ export default function Contact() {
   const t = useTranslation();
 
   const downloadCV = () => {
-    const link = document.createElement('a');
+    const link = document.createElement("a");
     // Use the actual file present in public/
-    link.href = '/ZeinabSattarian.CV.pdf';
-    link.download = 'ZeinabSattarian.CV.pdf';
+    link.href = "/ZeinabSattarian.CV.pdf";
+    link.download = "ZeinabSattarian.CV.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   };
- 
+
   return (
     <>
       <section id="section">
@@ -30,7 +30,13 @@ export default function Contact() {
           <h2 dangerouslySetInnerHTML={{ __html: t.contact.title }}></h2>
         </div>
         <div className="content2">
-          <button onClick={() => (window.location.href = "mailto:zeinab.s@pardis.sharif.edu")}>{t.contact.emailButton}</button>
+          <button
+            onClick={() =>
+              (window.location.href = "mailto:zeinab.s@pardis.sharif.edu")
+            }
+          >
+            {t.contact.emailButton}
+          </button>
           <button onClick={downloadCV}>{t.contact.cvButton}</button>
         </div>
       </section>
@@ -62,7 +68,7 @@ export default function Contact() {
         }
 
         section .content2 button:hover {
-          background: #00FFFF;
+          background: #00ffff;
           color: #2d3436;
         }
 
@@ -145,4 +151,3 @@ export default function Contact() {
     </>
   );
 }
-

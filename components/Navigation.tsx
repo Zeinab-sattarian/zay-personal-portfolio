@@ -2,12 +2,11 @@ import { useEffect, useState, useRef } from "react";
 import { useRouter } from "next/router";
 import { useTranslation } from "../hooks/useTranslation";
 import { Link } from "react-scroll";
-import { useRouter as nextUseRouter } from 'next/router';
-
+import { useRouter as nextUseRouter } from "next/router";
 
 /**
  *
- * 
+ *
  *
  */
 
@@ -120,11 +119,11 @@ export default function Navigation({
             <button
               onClick={() => {
                 const r = router;
-                const next = r.locale === 'en' ? 'fr' : 'en';
+                const next = r.locale === "en" ? "fr" : "en";
                 r.push(r.pathname, r.asPath, { locale: next });
               }}
             >
-              {router.locale === 'en' ? 'FR' : 'EN'}
+              {router.locale === "en" ? "FR" : "EN"}
             </button>
           </li>
         </ul>

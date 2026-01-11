@@ -1,16 +1,14 @@
 import ProjectsColumn from "components/projects/ProjectsColumn";
-import { useTranslation } from '../../hooks/useTranslation'
-
+import { useTranslation } from "../../hooks/useTranslation";
 
 /**
  *
- * 
+ *
  *
  * @param {String} title - Title of the component.
  * @param {String} subtitle - Subtitle of the component.
  *
  */
-
 
 export default function Projects() {
   const t = useTranslation();
@@ -23,7 +21,7 @@ export default function Projects() {
           <p dangerouslySetInnerHTML={{ __html: t.workSubtitle }}></p>
         </div>
         <div className="projects-column">
-        <ProjectsColumn />
+          <ProjectsColumn />
         </div>
       </section>
       <style jsx>{`

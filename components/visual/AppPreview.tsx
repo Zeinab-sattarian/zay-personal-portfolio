@@ -1,7 +1,6 @@
-
 /**
  *
- * 
+ *
  *
  * @param {String} image - Image shown in the preview.
  *
