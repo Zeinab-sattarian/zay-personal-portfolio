@@ -52,50 +52,39 @@
   "work": {
     "vdas": {
       "title": "<strong>Volunteer Dental Appointment System</strong> Bachelore's Thesis",
-      "desc": "Created a web-based platform to simplify appointment scheduling and gather feedback for volunteer dentists. Through comprehensive literature reviews, I explored existing appointment systems and technological advancements. My work led to improved patient satisfaction and extended charitable services to remote regions."
-    },
-    "nura": {
-      "title": "<strong>Nura Online Bank</strong> Website",
-      "desc": "Developed a real-time transaction processing system that ensures immediate updates to account balances. Additionally, designed features to display transaction history, created analytical tools for monthly expense reviews, and improved the user experience through intuitive UI/UX design principles."
-    },
-    "frs": {
-      "title": "<strong>Facial Recognition</strong> System",
-      "desc": "Developed a real-time facial recognition system to record employee attendance using computer vision models, resulting in a 30% accuracy improvement. Additionally, enhanced data reporting by organizing and cleaning the database, leading to more accurate monthly reports."
-    },
-    "weather": {
-      "title": "<strong>Weather & Flight Delay Prediction</strong> Dashboard",
-      "desc": "In my weather prediction project, ML was used to enhance the accuracy of weather forecasting models. By identifying patterns in historical weather data, my ML models predicted weather events with remarkable precision. Leveraging Microsoft Power BI, I created interactive dashboards to showcase weather trends. Similarly, in the flight delay prediction project, ML algorithms enabled accurate predictions."
-    },
-    "warehouse": {
-      "title": "<strong>Discount Warehouse Simulation</strong> System",
-      "desc": "Implemented a discrete event simulation for a discount warehouse using exponential and normal distributions to model customer interarrival and service times, respectively. The simulation generated a detailed table tracking customer arrivals, wait times, service durations, and server idle times. Key performance metrics were calculated and displayed."
-    },
-    "vdas": {
+      "desc": "Created a web-based platform to simplify appointment scheduling and gather feedback for volunteer dentists. Through comprehensive literature reviews, I explored existing appointment systems and technological advancements. My work led to improved patient satisfaction and extended charitable services to remote regions.",
       "type": "Bachelore's Thesis",
       "techs": "Reactjs Django Docker CSS HTML"
     },
     "nura": {
+      "title": "<strong>Nura Online Bank</strong> Website",
+      "desc": "Developed a real-time transaction processing system that ensures immediate updates to account balances. Additionally, designed features to display transaction history, created analytical tools for monthly expense reviews, and improved the user experience through intuitive UI/UX design principles.",
       "type": "Website",
       "techs": "Reactjs Nodejs Postgres CSS"
     },
     "frs": {
+      "title": "<strong>Facial Recognition</strong> System",
+      "desc": "Developed a real-time facial recognition system to record employee attendance using computer vision models, resulting in a 30% accuracy improvement. Additionally, enhanced data reporting by organizing and cleaning the database, leading to more accurate monthly reports.",
       "type": "System",
       "techs": "Python OpenCV SQL"
     },
     "weather": {
+      "title": "<strong>Weather & Flight Delay Prediction</strong> Dashboard",
+      "desc": "In my weather prediction project, ML was used to enhance the accuracy of weather forecasting models. By identifying patterns in historical weather data, my ML models predicted weather events with remarkable precision. Leveraging Microsoft Power BI, I created interactive dashboards to showcase weather trends. Similarly, in the flight delay prediction project, ML algorithms enabled accurate predictions.",
       "type": "Dashboard",
       "techs": "PowerBI SQL Python"
     },
     "warehouse": {
+      "title": "<strong>Discount Warehouse Simulation</strong> System",
+      "desc": "Implemented a discrete event simulation for a discount warehouse using exponential and normal distributions to model customer interarrival and service times, respectively. The simulation generated a detailed table tracking customer arrivals, wait times, service durations, and server idle times. Key performance metrics were calculated and displayed.",
       "type": "System",
       "techs": "SimPy Python"
     },
-    "findMe": "<strong>Find Me,</strong> In these Links"
-  }
-  ,
-  "workLinks": {
-    "github": "Github",
-    "linkedin": "LinkedIn",
-    "telegram": "Telegram"
+    "findMe": "<strong>Find Me,</strong> In these Links",
+    "links": {
+      "github": "Github",
+      "linkedin": "LinkedIn",
+      "telegram": "Telegram"
+    }
   }
 }

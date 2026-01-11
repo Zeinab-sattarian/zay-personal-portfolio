@@ -52,46 +52,39 @@
   "work": {
     "vdas": {
       "title": "<strong>Système de prise de rendez-vous dentaire bénévole</strong> - Mémoire",
-      "desc": "Création d'une plateforme web pour simplifier la prise de rendez-vous et recueillir les retours des dentistes bénévoles. Grâce à des revues de littérature, j'ai exploré les systèmes existants et les avancées technologiques, améliorant la satisfaction des patients et l'accès aux zones éloignées."
+      "desc": "Création d'une plateforme web pour simplifier la prise de rendez-vous et recueillir les retours des dentistes bénévoles. Grâce à des revues de littérature, j'ai exploré les systèmes existants et les avancées technologiques, améliorant la satisfaction des patients et l'accès aux zones éloignées.",
+      "type": "Mémoire de licence",
+      "techs": "Reactjs Django Docker CSS HTML"
     },
     "nura": {
       "title": "<strong>Nura Online Bank</strong> - Site web",
-      "desc": "Développement d'un système de traitement de transactions en temps réel garantissant des mises à jour immédiates des soldes. Conception d'outils d'analyse et amélioration de l'expérience utilisateur par des principes UI/UX."
+      "desc": "Développement d'un système de traitement de transactions en temps réel garantissant des mises à jour immédiates des soldes. Conception d'outils d'analyse et amélioration de l'expérience utilisateur par des principes UI/UX.",
+      "type": "Site web",
+      "techs": "Reactjs Nodejs Postgres CSS"
     },
     "frs": {
       "title": "<strong>Reconnaissance faciale</strong> - Système",
-      "desc": "Développement d'un système de reconnaissance faciale en temps réel pour enregistrer la présence des employés, améliorant la précision des rapports et l'organisation des données."
+      "desc": "Développement d'un système de reconnaissance faciale en temps réel pour enregistrer la présence des employés, améliorant la précision des rapports et l'organisation des données.",
+      "type": "Système",
+      "techs": "Python OpenCV SQL"
     },
     "weather": {
       "title": "<strong>Prédiction météo et retards de vol</strong> - Dashboard",
-      "desc": "Utilisation du ML pour améliorer la précision des prévisions météorologiques et création de tableaux de bord interactifs avec Microsoft Power BI. Pour la prédiction des retards de vol, utilisation des données historiques et d'algorithmes ML pour des prédictions précises."
+      "desc": "Utilisation du ML pour améliorer la précision des prévisions météorologiques et création de tableaux de bord interactifs avec Microsoft Power BI. Pour la prédiction des retards de vol, utilisation des données historiques et d'algorithmes ML pour des prédictions précises.",
+      "type": "Tableau de bord",
+      "techs": "PowerBI SQL Python"
     },
-      "vdas": {
-        "type": "Mémoire de licence",
-        "techs": "Reactjs Django Docker CSS HTML"
-      },
-      "nura": {
-        "type": "Site web",
-        "techs": "Reactjs Nodejs Postgres CSS"
-      },
-      "frs": {
-        "type": "Système",
-        "techs": "Python OpenCV SQL"
-      },
-      "weather": {
-        "type": "Tableau de bord",
-        "techs": "PowerBI SQL Python"
-      },
-      "warehouse": {
-        "type": "Système",
-        "techs": "SimPy Python"
-      },
-    "findMe": "<strong>Retrouvez-moi,</strong> sur ces liens"
-  }
-    ,
-    "workLinks": {
+    "warehouse": {
+      "title": "<strong>Simulation d'entrepôt</strong> - Système",
+      "desc": "Implémentation d'une simulation d'événements discrets pour un entrepôt, modélisant les arrivées et services clients; génération de tableaux détaillés et calcul des métriques de performance.",
+      "type": "Système",
+      "techs": "SimPy Python"
+    },
+    "findMe": "<strong>Retrouvez-moi,</strong> sur ces liens",
+    "links": {
       "github": "Github",
       "linkedin": "LinkedIn",
       "telegram": "Telegram"
     }
+  }
 }
