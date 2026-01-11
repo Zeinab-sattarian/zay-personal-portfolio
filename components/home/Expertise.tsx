@@ -20,7 +20,7 @@ export default function Expertise() {
     item3Title: `Front End Development`,
     item1: `Led and coordinated a team to successfully deliver projects using Agile and Scrum methodologies, improving productivity through stand-ups, task tracking, and collaborative problem-solving with tools like Jira.`,
     item2: `Worked and familiar with libraries such as OpenCV, Numpy, PyTorch, Python Imaging Library and TensorFlow.`,
-    item3: `Developed responsive and interactive user interfaces using React, implementing components, hooks, and state management to create seamless user experiences. Utilized modern JavaScript, JSX, and styling frameworks to deliver efficient and maintainable web applications.`,
+    item3: `Developed responsive and interactive user interfaces using React, implementing components, hooks, and state management to create seamless user experiences.`,
   });
 
   return (
