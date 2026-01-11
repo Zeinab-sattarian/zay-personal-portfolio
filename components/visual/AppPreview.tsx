@@ -11,7 +11,7 @@ export default function ImagePreview() {
   return (
     <>
       <div className={`container`}>
-        <img src="/Picture5.png" alt="" />
+        <img src="/picture5.png" alt="" />
       </div>
       <style jsx>
         {`
