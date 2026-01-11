@@ -159,6 +159,17 @@ export default function Navigation({
                 contact
               </Link>
             </li>
+            <li className="secondary language-select">
+              <button
+                onClick={() => {
+                  const r = router;
+                  const next = r.locale === "en" ? "fr" : "en";
+                  r.push(r.pathname, r.asPath, { locale: next });
+                }}
+              >
+                {router.locale === "en" ? "FR" : "EN"}
+              </button>
+            </li>
           </ul>
         </div>
       </nav>
