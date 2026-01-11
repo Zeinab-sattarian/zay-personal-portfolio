@@ -1,6 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import { useRouter } from "next/router";
 import { Link } from "react-scroll";
+import { useRouter as nextUseRouter } from 'next/router';
 
 
 /**
@@ -109,6 +110,19 @@ export default function Navigation({
             <Link activeClass="active" smooth spy to="contact">
               contact
             </Link>
+          </li>
+        </ul>
+        <ul>
+          <li className="secondary language-select">
+            <button
+              onClick={() => {
+                const r = router;
+                const next = r.locale === 'en' ? 'fr' : 'en';
+                r.push(r.pathname, r.asPath, { locale: next });
+              }}
+            >
+              {router.locale === 'en' ? 'FR' : 'EN'}
+            </button>
           </li>
         </ul>
         <div className={`mobile-menu ${state.isActive ? "opened" : "closed"}`}>

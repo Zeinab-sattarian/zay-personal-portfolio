@@ -1,6 +1,7 @@
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect } from "react";
+import { useTranslation } from "../../hooks/useTranslation";
 gsap.registerPlugin(ScrollTrigger);
 
 /**
@@ -16,10 +17,7 @@ gsap.registerPlugin(ScrollTrigger);
  */
 
 export default function WorkDesktop() {
-  const [texts] = useState({
-    title: `<strong>Work,</strong> my previous projects.`,
-    subtitle: "Here are the projects that i have worked on before.",
-  });
+  const t = useTranslation();
   const panels = useRef([]);
   const panelsContainer = useRef();
 
@@ -53,10 +51,10 @@ export default function WorkDesktop() {
             ref={(e) => createPanelsRefs(e, 0)}
           >
             <div>
-              <h1 dangerouslySetInnerHTML={{ __html: texts.title }}></h1>
-              <p>{texts.subtitle}</p>
+              <h1 dangerouslySetInnerHTML={{ __html: t.workTitle }}></h1>
+              <p>{t.workSubtitle}</p>
               <div className="scroll-down">
-                Scroll down<div className="arrow"></div>
+                {t.scrollDown}<div className="arrow"></div>
               </div>
             </div>
           </div>
