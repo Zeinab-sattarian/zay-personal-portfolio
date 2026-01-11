@@ -70,6 +70,32 @@
       "title": "<strong>Discount Warehouse Simulation</strong> System",
       "desc": "Implemented a discrete event simulation for a discount warehouse using exponential and normal distributions to model customer interarrival and service times, respectively. The simulation generated a detailed table tracking customer arrivals, wait times, service durations, and server idle times. Key performance metrics were calculated and displayed."
     },
+    "vdas": {
+      "type": "Bachelore's Thesis",
+      "techs": "Reactjs Django Docker CSS HTML"
+    },
+    "nura": {
+      "type": "Website",
+      "techs": "Reactjs Nodejs Postgres CSS"
+    },
+    "frs": {
+      "type": "System",
+      "techs": "Python OpenCV SQL"
+    },
+    "weather": {
+      "type": "Dashboard",
+      "techs": "PowerBI SQL Python"
+    },
+    "warehouse": {
+      "type": "System",
+      "techs": "SimPy Python"
+    },
     "findMe": "<strong>Find Me,</strong> In these Links"
+  }
+  ,
+  "workLinks": {
+    "github": "Github",
+    "linkedin": "LinkedIn",
+    "telegram": "Telegram"
   }
 }

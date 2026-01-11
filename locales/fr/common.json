@@ -66,10 +66,32 @@
       "title": "<strong>Prédiction météo et retards de vol</strong> - Dashboard",
       "desc": "Utilisation du ML pour améliorer la précision des prévisions météorologiques et création de tableaux de bord interactifs avec Microsoft Power BI. Pour la prédiction des retards de vol, utilisation des données historiques et d'algorithmes ML pour des prédictions précises."
     },
-    "warehouse": {
-      "title": "<strong>Simulation d'entrepôt</strong> - Système",
-      "desc": "Implémentation d'une simulation d'événements discrets pour un entrepôt, modélisant les arrivées et services clients; génération de tableaux détaillés et calcul des métriques de performance."
-    },
+      "vdas": {
+        "type": "Mémoire de licence",
+        "techs": "Reactjs Django Docker CSS HTML"
+      },
+      "nura": {
+        "type": "Site web",
+        "techs": "Reactjs Nodejs Postgres CSS"
+      },
+      "frs": {
+        "type": "Système",
+        "techs": "Python OpenCV SQL"
+      },
+      "weather": {
+        "type": "Tableau de bord",
+        "techs": "PowerBI SQL Python"
+      },
+      "warehouse": {
+        "type": "Système",
+        "techs": "SimPy Python"
+      },
     "findMe": "<strong>Retrouvez-moi,</strong> sur ces liens"
   }
+    ,
+    "workLinks": {
+      "github": "Github",
+      "linkedin": "LinkedIn",
+      "telegram": "Telegram"
+    }
 }

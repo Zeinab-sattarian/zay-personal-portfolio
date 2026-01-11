@@ -65,9 +65,7 @@ export default function WorkDesktop() {
                   width: "clamp(32vw, 32vw, 991.92px)",
                   textAlign: "left",
                 }}
-                dangerouslySetInnerHTML={{
-                  __html: `<strong>Volunteer Dental Appointment System</strong> Bachelore's Thesis`,
-                }}
+                dangerouslySetInnerHTML={{ __html: t.work.vdas.title }}
               ></h1>
               <p
                 style={{
@@ -75,12 +73,7 @@ export default function WorkDesktop() {
                   textAlign: "left",
                 }}
               >
-                Created a web-based platform to simplify appointment scheduling
-                and gather feedback for volunteer dentists. Through
-                comprehensive literature reviews, I explored existing
-                appointment systems and technological advancements. My work led
-                to improved patient satisfaction and extended charitable
-                services to remote regions.
+                {t.work.vdas.desc}
               </p>
             </div>
             <img src="/work/VDAS.png" alt="VDAS" />
@@ -92,9 +85,7 @@ export default function WorkDesktop() {
                   width: "clamp(32vw, 32vw, 991.92px)",
                   textAlign: "left",
                 }}
-                dangerouslySetInnerHTML={{
-                  __html: `<strong>Nura Online Bank</strong> Website`,
-                }}
+                dangerouslySetInnerHTML={{ __html: t.work.nura.title }}
               ></h1>
               <p
                 style={{
@@ -102,11 +93,7 @@ export default function WorkDesktop() {
                   textAlign: "left",
                 }}
               >
-                Developed a real-time transaction processing system that ensures
-                immediate updates to account balances. Additionally, designed
-                features to display transaction history, created analytical
-                tools for monthly expense reviews, and improved the user
-                experience through intuitive UI/UX design principles.
+                {t.work.nura.desc}
               </p>
               <div className=""></div>
             </div>
@@ -120,9 +107,7 @@ export default function WorkDesktop() {
                   textAlign: "left",
                   color: "white",
                 }}
-                dangerouslySetInnerHTML={{
-                  __html: `<strong>Facial Recognition</strong> System`,
-                }}
+                dangerouslySetInnerHTML={{ __html: t.work.frs.title }}
               ></h1>
               <p
                 style={{
@@ -131,11 +116,7 @@ export default function WorkDesktop() {
                   color: "white",
                 }}
               >
-                developed a real-time facial recognition system to record
-                employee attendance using computer vision models, resulting in a
-                30% accuracy improvement. Additionally, I enhanced data
-                reporting by organizing and cleaning the database, leading to
-                more accurate monthly reports.
+                {t.work.frs.desc}
               </p>
             </div>
             <img src="/work/FRS.png" alt="FRS" />
@@ -148,9 +129,7 @@ export default function WorkDesktop() {
                   width: "clamp(36vw, 36vw, 1100.92px)",
                   textAlign: "left",
                 }}
-                dangerouslySetInnerHTML={{
-                  __html: `<strong>Weather & Flight Delay Prediction</strong> Dashboard`,
-                }}
+                dangerouslySetInnerHTML={{ __html: t.work.weather.title }}
               ></h1>
               <p
                 style={{
@@ -159,14 +138,7 @@ export default function WorkDesktop() {
                   textAlign: "left",
                 }}
               >
-                In my weather prediction project, ML was used to enhance the
-                accuracy of weather forecasting models. By identifying patterns
-                in historical weather data, my ML models predicted weather
-                events with remarkable precision. Leveraging Microsoft Power BI,
-                I created interactive dashboards to showcase weather trends.
-                Similarly, in the flight delay prediction project, by leveraging
-                historical flight data and relevant features, ML algorithms
-                enabled accurate predictions.
+                {t.work.weather.desc}
               </p>
             </div>
             <div
@@ -179,9 +151,7 @@ export default function WorkDesktop() {
                   width: "clamp(36vw, 36vw, 1100.92px)",
                   textAlign: "left",
                 }}
-                dangerouslySetInnerHTML={{
-                  __html: `<strong>Discount Warehouse Simulation</strong> System`,
-                }}
+                dangerouslySetInnerHTML={{ __html: t.work.warehouse.title }}
               ></h1>
               <p
                 style={{
@@ -190,41 +160,27 @@ export default function WorkDesktop() {
                   textAlign: "left",
                 }}
               >
-                implemented a discrete event simulation for a discount warehouse
-                using exponential and normal distributions to model customer
-                interarrival and service times, respectively. The simulation
-                generated a detailed table tracking customer arrivals, wait
-                times, service durations, and server idle times. Key performance
-                metrics, such as average waiting time, probability of waiting,
-                server idle time fraction, average service time, and total time
-                in the warehouse, were calculated and displayed. The number of
-                customers can vary based on input, allowing for flexible
-                analysis
+                {t.work.warehouse.desc}
               </p>
             </div>
           </section>
           <section className="panel gray" ref={(e) => createPanelsRefs(e, 5)}>
             <div className="links">
-              <h1
-                style={{ color: "#00FFFF" }}
-                dangerouslySetInnerHTML={{
-                  __html: `<strong>Find Me,</strong> In these Links`,
-                }}
-              ></h1>
+              <h1 style={{ color: "#00FFFF" }} dangerouslySetInnerHTML={{ __html: t.work.findMe }}></h1>
               <div className="box2">
                 <a href="https://github.com/Zeinab-sattarian">
                   <button>
-                    <span>Github </span>
+                    <span>{t.work.links.github}</span>
                   </button>
                 </a>
                 <a href="https://www.linkedin.com/in/zaynabsattarian?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
                   <button>
-                    <span>LinkedIn </span>
+                    <span>{t.work.links.linkedin}</span>
                   </button>
                 </a>
                 <a href="https://t.me/Zedvm">
                   <button>
-                    <span>Telegram </span>
+                    <span>{t.work.links.telegram}</span>
                   </button>
                 </a>
               </div>
