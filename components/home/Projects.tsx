@@ -1,5 +1,5 @@
 import ProjectsColumn from "components/projects/ProjectsColumn";
-import { useState } from "react";
+import { useTranslation } from '../../hooks/useTranslation'
 
 
 /**
@@ -13,17 +13,14 @@ import { useState } from "react";
 
 
 export default function Projects() {
-  const [texts] = useState({
-    title: `<strong>Work,</strong> my previous projects.`,
-    subtitle: "Here are the projects that I have worked on before.",
-  });
+  const t = useTranslation();
 
   return (
     <>
       <section id="section">
         <div className="heading">
-          <h2 dangerouslySetInnerHTML={{ __html: texts.title }}></h2>
-          <p dangerouslySetInnerHTML={{ __html: texts.subtitle }}></p>
+          <h2 dangerouslySetInnerHTML={{ __html: t.workTitle }}></h2>
+          <p dangerouslySetInnerHTML={{ __html: t.workSubtitle }}></p>
         </div>
         <div className="projects-column">
         <ProjectsColumn />
