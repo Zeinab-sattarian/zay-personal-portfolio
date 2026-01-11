@@ -495,26 +495,26 @@ export default function Navigation({
 
           nav .mobile-menu.closed button.menu-button {
             background-size: 24px 16px;
-            background-image: url("/menu_icon.png");
+            background-image: url("/menu_icon.svg");
             animation: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s rotateLeft;
             cursor: pointer;
           }
 
           nav .mobile-menu.opened button.menu-button {
             background-size: 17px 17px;
-            background-image: url("/menu_icon_close.png");
+            background-image: url("/menu_icon_close.svg");
             animation: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s rotateRight;
             cursor: pointer;
             background-position-x: right;
           }
 
           nav.sticky.dim .mobile-menu.closed button.menu-button {
-            background-image: url("/menu_icon_dim.png");
+            background-image: url("/menu_icon_dim.svg");
             cursor: pointer;
           }
 
           nav.sticky.dim .mobile-menu.opened button.menu-button {
-            background-image: url("/menu_icon_close_dim.png");
+            background-image: url("/menu_icon_close_dim.svg");
             cursor: pointer;
           }
 
