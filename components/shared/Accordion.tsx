@@ -17,12 +17,12 @@ import { useTranslation } from "../../hooks/useTranslation";
 
 export default function SimpleAccordion() {
   const t = useTranslation();
-  const [questions] = useState({ questions: t.experienceQuestions || [] });
+  const questions = t.experienceQuestions || [];
 
   return (
     <>
       <div className="accordion-style">
-        {questions.questions.map((i) => {
+        {questions.map((i) => {
           return (
             <Accordion
               elevation={0}
