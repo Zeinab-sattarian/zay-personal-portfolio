@@ -29,9 +29,47 @@
     "title": "<strong>Expérience</strong>",
     "subtitle": ""
   },
+  "experienceQuestions": [
+    {
+      "questionTitle": "Stage chez Shahid Bahonar Copper Industries Co.",
+      "questionDescription": "Travail sur l'apprentissage automatique, la vision par ordinateur, la visualisation d'informations collaborative, le développement front-end, et le nettoyage et le traitement des données."
+    },
+    {
+      "questionTitle": "Scrum Master et Chef de Projet",
+      "questionDescription": "Dirigé une équipe de 4 étudiants en utilisant les cadres Agile et Scrum, améliorant la gestion de projet et la collaboration, augmentant la productivité avec des réunions quotidiennes et des outils comme Jira, et assurant la livraison ponctuelle d'incréments de projet de haute qualité."
+    },
+    {
+      "questionTitle": "Assistant d'enseignement",
+      "questionDescription": "Amélioration de l'apprentissage des étudiants en aidant à l'enseignement de l'analyse et conception des systèmes et des concepts avancés d'informatique II, création de présentations et de supports de formation pour plus de 70 étudiants, conception et correction des devoirs et projets, et amélioration des méthodes d'enseignement de 50% grâce à l'enregistrement et à la prise en compte des retours des étudiants."
+    }
+  ],
   "contact": {
     "title": "<strong>Contactez-moi</strong>",
     "emailButton": "Envoyez-moi un e-mail",
     "cvButton": "Mon CV"
+  }
+  ,
+  "work": {
+    "vdas": {
+      "title": "<strong>Système de prise de rendez-vous dentaire bénévole</strong> - Mémoire",
+      "desc": "Création d'une plateforme web pour simplifier la prise de rendez-vous et recueillir les retours des dentistes bénévoles. Grâce à des revues de littérature, j'ai exploré les systèmes existants et les avancées technologiques, améliorant la satisfaction des patients et l'accès aux zones éloignées."
+    },
+    "nura": {
+      "title": "<strong>Nura Online Bank</strong> - Site web",
+      "desc": "Développement d'un système de traitement de transactions en temps réel garantissant des mises à jour immédiates des soldes. Conception d'outils d'analyse et amélioration de l'expérience utilisateur par des principes UI/UX."
+    },
+    "frs": {
+      "title": "<strong>Reconnaissance faciale</strong> - Système",
+      "desc": "Développement d'un système de reconnaissance faciale en temps réel pour enregistrer la présence des employés, améliorant la précision des rapports et l'organisation des données."
+    },
+    "weather": {
+      "title": "<strong>Prédiction météo et retards de vol</strong> - Dashboard",
+      "desc": "Utilisation du ML pour améliorer la précision des prévisions météorologiques et création de tableaux de bord interactifs avec Microsoft Power BI. Pour la prédiction des retards de vol, utilisation des données historiques et d'algorithmes ML pour des prédictions précises."
+    },
+    "warehouse": {
+      "title": "<strong>Simulation d'entrepôt</strong> - Système",
+      "desc": "Implémentation d'une simulation d'événements discrets pour un entrepôt, modélisant les arrivées et services clients; génération de tableaux détaillés et calcul des métriques de performance."
+    },
+    "findMe": "<strong>Retrouvez-moi,</strong> sur ces liens"
   }
 }

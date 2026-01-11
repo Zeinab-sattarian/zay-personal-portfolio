@@ -29,9 +29,47 @@
     "title": "<strong>Experience</strong>",
     "subtitle": ""
   },
+  "experienceQuestions": [
+    {
+      "questionTitle": "Internship at Shahid Bahonar Copper Industries Co.",
+      "questionDescription": "Worked on machine learning, computer vision, collaborative information visualization, front-end development, and data cleaning and processing."
+    },
+    {
+      "questionTitle": "Scrum Master and Project Manager",
+      "questionDescription": "Led a team of 4 students using Agile and Scrum frameworks, enhancing project management and collaboration, improving productivity with regular stand-ups and tools like Jira, and ensuring timely delivery of high-quality project increments."
+    },
+    {
+      "questionTitle": "Teaching Assistant",
+      "questionDescription": "Enhanced student learning by assisting in teaching Systems Analysis and Design and Advanced Computer Concepts II, creating presentations and training materials for over 70 students, designing and grading assignments and projects to ensure fair assessment, and improving teaching methods by 50% through recording and acting on student feedback."
+    }
+  ],
   "contact": {
     "title": "<strong>Get in touch</strong> with me.",
     "emailButton": "Send me an Email",
     "cvButton": "My CV"
+  }
+  ,
+  "work": {
+    "vdas": {
+      "title": "<strong>Volunteer Dental Appointment System</strong> Bachelore's Thesis",
+      "desc": "Created a web-based platform to simplify appointment scheduling and gather feedback for volunteer dentists. Through comprehensive literature reviews, I explored existing appointment systems and technological advancements. My work led to improved patient satisfaction and extended charitable services to remote regions."
+    },
+    "nura": {
+      "title": "<strong>Nura Online Bank</strong> Website",
+      "desc": "Developed a real-time transaction processing system that ensures immediate updates to account balances. Additionally, designed features to display transaction history, created analytical tools for monthly expense reviews, and improved the user experience through intuitive UI/UX design principles."
+    },
+    "frs": {
+      "title": "<strong>Facial Recognition</strong> System",
+      "desc": "Developed a real-time facial recognition system to record employee attendance using computer vision models, resulting in a 30% accuracy improvement. Additionally, enhanced data reporting by organizing and cleaning the database, leading to more accurate monthly reports."
+    },
+    "weather": {
+      "title": "<strong>Weather & Flight Delay Prediction</strong> Dashboard",
+      "desc": "In my weather prediction project, ML was used to enhance the accuracy of weather forecasting models. By identifying patterns in historical weather data, my ML models predicted weather events with remarkable precision. Leveraging Microsoft Power BI, I created interactive dashboards to showcase weather trends. Similarly, in the flight delay prediction project, ML algorithms enabled accurate predictions."
+    },
+    "warehouse": {
+      "title": "<strong>Discount Warehouse Simulation</strong> System",
+      "desc": "Implemented a discrete event simulation for a discount warehouse using exponential and normal distributions to model customer interarrival and service times, respectively. The simulation generated a detailed table tracking customer arrivals, wait times, service durations, and server idle times. Key performance metrics were calculated and displayed."
+    },
+    "findMe": "<strong>Find Me,</strong> In these Links"
   }
 }
