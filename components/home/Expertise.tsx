@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from '../../hooks/useTranslation';
 
 /**
  *
@@ -12,16 +13,7 @@ import { useState } from "react";
  */
 
 export default function Expertise() {
-  const [texts] = useState({
-    title: `<strong>Expertise,</strong> what I worked on before.`,
-    subtitle: `I have worked on various projects and technologies, but these are the topics that I am most interested in`,
-    item1Title: `Project Management`,
-    item2Title: `Machine Learning and Computer Vision`,
-    item3Title: `Front End Development`,
-    item1: `Led and coordinated a team to successfully deliver projects using Agile and Scrum methodologies, improving productivity through stand-ups, task tracking, and collaborative problem-solving with tools like Jira.`,
-    item2: `Worked and familiar with libraries such as OpenCV, Numpy, PyTorch, Python Imaging Library and TensorFlow.`,
-    item3: `Developed responsive and interactive user interfaces using React, implementing components, hooks, and state management to create seamless user experiences.`,
-  });
+  const t = useTranslation();
 
   return (
     <>
@@ -29,28 +21,28 @@ export default function Expertise() {
         <div className="content">
           <h2
             className="animation-element"
-            dangerouslySetInnerHTML={{ __html: texts.title }}
+            dangerouslySetInnerHTML={{ __html: t.expertise.title }}
           ></h2>
           <p
             className="animation-element"
-            dangerouslySetInnerHTML={{ __html: texts.subtitle }}
+            dangerouslySetInnerHTML={{ __html: t.expertise.subtitle }}
           ></p>
 
           <ul>
             <li className="animation-element">
               <img src="/icon/DA.png" />
-              <h4>{texts.item1Title}</h4>
-              <span>{texts.item1}</span>
+              <h4>{t.expertise.item1Title}</h4>
+              <span>{t.expertise.item1}</span>
             </li>
             <li className="animation-element">
               <img src="/icon/ML.png" />
-              <h4>{texts.item2Title}</h4>
-              <span>{texts.item2}</span>
+              <h4>{t.expertise.item2Title}</h4>
+              <span>{t.expertise.item2}</span>
             </li>
             <li className="animation-element">
               <img src="/icon/FSD.png" />
-              <h4>{texts.item3Title}</h4>
-              <span>{texts.item3}</span>
+              <h4>{t.expertise.item3Title}</h4>
+              <span>{t.expertise.item3}</span>
             </li>
           </ul>
         </div>

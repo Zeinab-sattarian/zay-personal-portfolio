@@ -1,5 +1,6 @@
 import ImagePreview from "components/visual/AppPreview";
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
+import { useTranslation } from '../../hooks/useTranslation';
 
 /**
  *
@@ -11,19 +12,15 @@ import { useState, useEffect, useRef } from "react";
  */
 
 export default function Home() {
-  const [texts] = useState({
-    title: "Zeinab Satarian",
-    subtitle:
-      " I am a recent graduate with a Bachelor of Science in Computer Engineering from Sharif University of Technology in Iran, the nation's leading institution for STEM fields, where I am ranked #1 among my peers with a GPA of 18.8/20.",
-  });
+  const t = useTranslation();
   return (
     <>
       <div className={`intro`}>
         <div className="content">
-          <h1>{texts.title}</h1>
+          <h1>{t.home.title}</h1>
           <p
             style={{ opacity: 0 }}
-            dangerouslySetInnerHTML={{ __html: texts.subtitle }}
+            dangerouslySetInnerHTML={{ __html: t.home.subtitle }}
           ></p>
         </div>
         <div className={`preview-container ${"shown-preview"}`}>

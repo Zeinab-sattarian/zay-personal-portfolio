@@ -1,5 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import { useRouter } from "next/router";
+import { useTranslation } from "../hooks/useTranslation";
 import { Link } from "react-scroll";
 import { useRouter as nextUseRouter } from 'next/router';
 
@@ -69,6 +70,8 @@ export default function Navigation({
       };
     }
   }
+  const t = useTranslation();
+
   return (
     <>
       <nav
@@ -88,27 +91,27 @@ export default function Navigation({
         <ul className="menu">
           <li className="secondary">
             <Link activeClass="active" smooth spy to="home">
-              home
+              {t.nav.home}
             </Link>
           </li>
           <li className="secondary">
             <Link activeClass="active" smooth spy to="expertise">
-              expertise
+              {t.nav.expertise}
             </Link>
           </li>
           <li className="secondary">
             <Link activeClass="active" smooth spy to="work">
-              work
+              {t.nav.work}
             </Link>
           </li>
           <li className="secondary">
             <Link activeClass="active" smooth spy to="experience">
-              experience
+              {t.nav.experience}
             </Link>
           </li>
           <li className="secondary">
             <Link activeClass="active" smooth spy to="contact">
-              contact
+              {t.nav.contact}
             </Link>
           </li>
         </ul>

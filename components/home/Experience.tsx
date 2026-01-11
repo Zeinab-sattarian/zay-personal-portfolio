@@ -1,5 +1,5 @@
 import SimpleAccordion from "components/shared/Accordion";
-import { useState } from "react";
+import { useTranslation } from '../../hooks/useTranslation';
 
 /**
  *
@@ -11,17 +11,14 @@ import { useState } from "react";
  */
 
 export default function Experience() {
-  const [texts] = useState({
-    title: `<strong>Experience</strong> `,
-    subtitle: ``,
-  });
+  const t = useTranslation();
 
   return (
     <>
       <section id="section2">
         <div className="content">
-          <h2 dangerouslySetInnerHTML={{ __html: texts.title }}></h2>
-          <p dangerouslySetInnerHTML={{ __html: texts.subtitle }}></p>
+          <h2 dangerouslySetInnerHTML={{ __html: t.experience.title }}></h2>
+          <p dangerouslySetInnerHTML={{ __html: t.experience.subtitle }}></p>
           <div className="accordion">
             <SimpleAccordion />
           </div>

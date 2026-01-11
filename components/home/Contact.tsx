@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from '../../hooks/useTranslation';
 
 /**
  *
@@ -10,9 +11,7 @@ import { useState } from "react";
  */
 
 export default function Contact() {
-  const [texts] = useState({
-    title: `<strong>Get in touch</strong> with me.`,
-  });
+  const t = useTranslation();
 
   const downloadCV = () => {
     const link = document.createElement('a');
@@ -27,15 +26,11 @@ export default function Contact() {
     <>
       <section id="section">
         <div className="content">
-          <h2 dangerouslySetInnerHTML={{ __html: texts.title }}></h2>
+          <h2 dangerouslySetInnerHTML={{ __html: t.contact.title }}></h2>
         </div>
         <div className="content2">
-          <button onClick={() => (window.location.href = "mailto:zeinab.s@pardis.sharif.edu")}>
-            Send me an Email
-          </button>
-          <button onClick={downloadCV}>
-            My CV
-          </button>
+          <button onClick={() => (window.location.href = "mailto:zeinab.s@pardis.sharif.edu")}>{t.contact.emailButton}</button>
+          <button onClick={downloadCV}>{t.contact.cvButton}</button>
         </div>
       </section>
 

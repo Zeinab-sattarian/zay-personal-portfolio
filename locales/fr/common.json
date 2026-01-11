@@ -3,4 +3,35 @@
   "workSubtitle": "Voici les projets sur lesquels j'ai travaillé auparavant.",
   "findMe": "Retrouvez-moi, sur ces liens",
   "scrollDown": "Faites défiler"
+  ,
+  "nav": {
+    "home": "accueil",
+    "expertise": "expertise",
+    "work": "projets",
+    "experience": "expérience",
+    "contact": "contact"
+  },
+  "home": {
+    "title": "Zeinab Satarian",
+    "subtitle": "Je suis diplômée en génie informatique de l'Université Sharif de Technologie en Iran, classée première de ma promotion."
+  },
+  "expertise": {
+    "title": "<strong>Expertise,</strong> sur quoi j'ai travaillé.",
+    "subtitle": "J'ai travaillé sur divers projets et technologies, mais voici les sujets qui m'intéressent le plus",
+    "item1Title": "Gestion de projet",
+    "item2Title": "Apprentissage automatique et vision par ordinateur",
+    "item3Title": "Développement Front-End",
+    "item1": "J'ai dirigé et coordonné une équipe pour livrer des projets avec méthodologies Agile et Scrum, améliorant la productivité grâce aux stand-ups et au suivi des tâches.",
+    "item2": "Travail avec des bibliothèques telles qu'OpenCV, Numpy, PyTorch, PIL et TensorFlow.",
+    "item3": "Développement d'interfaces utilisateur réactives avec React, composants, hooks et gestion d'état."
+  },
+  "experience": {
+    "title": "<strong>Expérience</strong>",
+    "subtitle": ""
+  },
+  "contact": {
+    "title": "<strong>Contactez-moi</strong>",
+    "emailButton": "Envoyez-moi un e-mail",
+    "cvButton": "Mon CV"
+  }
 }
