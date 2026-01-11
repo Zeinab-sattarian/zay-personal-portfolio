@@ -608,6 +608,30 @@ export default function Navigation({
             width: 100%;
           }
 
+          /* Make mobile language toggle button larger and more touch-friendly */
+          nav .mobile-menu ul li.secondary.language-select button {
+            border: none;
+            background: none;
+            font-family: Visby, -apple-system, BlinkMacSystemFont, "Segoe UI",
+              Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            color: #ffffffcc;
+            padding: 0 16px;
+            width: 100%;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+          }
+
+          nav.dim .mobile-menu ul li.secondary.language-select button:hover {
+            color: var(--title-color);
+          }
+
           nav.dim .mobile-menu ul li.secondary.language-select select {
             color: #00000066;
           }
