@@ -15,8 +15,9 @@ export default function Contact() {
 
   const downloadCV = () => {
     const link = document.createElement('a');
-    link.href = '/datamining&IV.CV.pdf'; 
-    link.download = 'MyCV.pdf';
+    // Use the actual file present in public/
+    link.href = '/ZeinabSattarian.CV.pdf';
+    link.download = 'ZeinabSattarian.CV.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
