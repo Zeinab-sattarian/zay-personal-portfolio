@@ -32,7 +32,7 @@ export default function Contact() {
         <div className="content2">
           <button
             onClick={() =>
-              (window.location.href = "mailto:zeinab.s@pardis.sharif.edu")
+              (window.location.href = "mailto:sattarianzeinab@gmail.com")
             }
           >
             {t.contact.emailButton}
