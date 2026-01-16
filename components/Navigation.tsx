@@ -64,8 +64,12 @@ export default function Navigation({
             document.querySelector<HTMLDivElement>(".intro")?.offsetHeight;
         }
         handleNavigationBackground();
-        setState((state) => ({ ...state, isActive: false }));
-        setLanguage((state) => ({ ...state, state: false }));
+        // Only close menu if it's a page scroll, not a scroll inside the mobile menu
+        const mobileMenu = document.querySelector(".mobile-menu.opened");
+        if (!mobileMenu) {
+          setState((state) => ({ ...state, isActive: false }));
+          setLanguage((state) => ({ ...state, state: false }));
+        }
       };
     }
   }
