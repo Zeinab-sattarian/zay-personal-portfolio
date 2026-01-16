@@ -129,7 +129,9 @@ export default function Navigation({
               }}
             >
               <span className="lang-switch-track">
-                <span className="lang-switch-label">{router.locale === "en" ? "EN" : "FR"}</span>
+                <span className="lang-switch-label">
+                  {router.locale === "en" ? "EN" : "FR"}
+                </span>
               </span>
             </button>
           </li>
@@ -168,7 +170,9 @@ export default function Navigation({
             </li>
             <li className="secondary language-select">
               <button
-                className={`lang-switch ${router.locale === "en" ? "en" : "fr"}`}
+                className={`lang-switch ${
+                  router.locale === "en" ? "en" : "fr"
+                }`}
                 onClick={() => {
                   const r = router;
                   const next = r.locale === "en" ? "fr" : "en";
@@ -176,7 +180,9 @@ export default function Navigation({
                 }}
               >
                 <span className="lang-switch-track">
-                  <span className="lang-switch-label">{router.locale === "en" ? "EN" : "FR"}</span>
+                  <span className="lang-switch-label">
+                    {router.locale === "en" ? "EN" : "FR"}
+                  </span>
                 </span>
               </button>
             </li>
@@ -264,7 +270,7 @@ export default function Navigation({
           align-items: center;
           justify-content: center;
         }
-        
+
         nav ul li.secondary.language-select .lang-switch-track {
           display: inline-flex;
           align-items: center;
@@ -277,32 +283,44 @@ export default function Navigation({
           transition: all 0.3s ease;
           position: relative;
         }
-        
-        nav ul li.secondary.language-select button.lang-switch.en .lang-switch-track {
+
+        nav
+          ul
+          li.secondary.language-select
+          button.lang-switch.en
+          .lang-switch-track {
           background: rgba(255, 255, 255, 0.2);
         }
-        
-        nav ul li.secondary.language-select button.lang-switch.fr .lang-switch-track {
+
+        nav
+          ul
+          li.secondary.language-select
+          button.lang-switch.fr
+          .lang-switch-track {
           background: rgba(255, 255, 255, 0.3);
         }
-        
+
         nav ul li.secondary.language-select .lang-switch-label {
           font-size: min(1.2vw, 11pt);
           color: rgba(255, 255, 255, 0.8);
           font-weight: 500;
           letter-spacing: 0.5px;
         }
-        
+
         nav ul li.secondary.language-select button:hover .lang-switch-track {
           background: rgba(255, 255, 255, 0.3);
           border-color: rgba(255, 255, 255, 0.5);
         }
-        
-        nav.sticky.dim ul li.secondary.language-select button:hover .lang-switch-track {
+
+        nav.sticky.dim
+          ul
+          li.secondary.language-select
+          button:hover
+          .lang-switch-track {
           background: rgba(0, 0, 0, 0.1);
           border-color: var(--title-color);
         }
-        
+
         nav.sticky.dim ul li.secondary.language-select .lang-switch-label {
           color: var(--title-color);
         }
@@ -690,11 +708,21 @@ export default function Navigation({
             transition: all 0.3s ease;
           }
 
-          nav .mobile-menu ul li.secondary.language-select button.lang-switch.en .lang-switch-track {
+          nav
+            .mobile-menu
+            ul
+            li.secondary.language-select
+            button.lang-switch.en
+            .lang-switch-track {
             background: rgba(255, 255, 255, 0.2);
           }
 
-          nav .mobile-menu ul li.secondary.language-select button.lang-switch.fr .lang-switch-track {
+          nav
+            .mobile-menu
+            ul
+            li.secondary.language-select
+            button.lang-switch.fr
+            .lang-switch-track {
             background: rgba(255, 255, 255, 0.3);
           }
 
@@ -705,17 +733,31 @@ export default function Navigation({
             letter-spacing: 0.5px;
           }
 
-          nav .mobile-menu ul li.secondary.language-select button:hover .lang-switch-track {
+          nav
+            .mobile-menu
+            ul
+            li.secondary.language-select
+            button:hover
+            .lang-switch-track {
             background: rgba(255, 255, 255, 0.3);
             border-color: rgba(255, 255, 255, 0.5);
           }
 
-          nav.dim .mobile-menu ul li.secondary.language-select button:hover .lang-switch-track {
+          nav.dim
+            .mobile-menu
+            ul
+            li.secondary.language-select
+            button:hover
+            .lang-switch-track {
             background: rgba(0, 0, 0, 0.1);
             border-color: var(--title-color);
           }
 
-          nav.dim .mobile-menu ul li.secondary.language-select .lang-switch-label {
+          nav.dim
+            .mobile-menu
+            ul
+            li.secondary.language-select
+            .lang-switch-label {
             color: var(--title-color);
           }
 
