@@ -586,6 +586,10 @@ export default function Navigation({
             padding-top: 0;
             padding-bottom: 0;
             padding-right: 0;
+            width: auto;
+            margin-bottom: 0;
+            border: none;
+            height: auto;
           }
           nav .mobile-menu ul li.secondary.language-select select {
             border: none;
@@ -608,20 +612,21 @@ export default function Navigation({
             width: 100%;
           }
 
-          /* Make mobile language toggle button larger and more touch-friendly */
+          /* Make mobile language toggle button compact and appropriately sized */
           nav .mobile-menu ul li.secondary.language-select button {
             border: none;
             background: none;
             font-family: Visby, -apple-system, BlinkMacSystemFont, "Segoe UI",
-              Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+              Helvetica, Arial, sans-serif, "Apple Color Emoji",
+              "Segoe UI Emoji";
             font-style: normal;
             font-weight: 400;
-            font-size: 18px;
-            line-height: 22px;
+            font-size: 14px;
+            line-height: 20px;
             color: #ffffffcc;
-            padding: 0 16px;
-            width: 100%;
-            height: 40px;
+            padding: 6px 12px;
+            width: auto;
+            height: auto;
             display: flex;
             align-items: center;
             justify-content: center;
