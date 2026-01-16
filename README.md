@@ -18,14 +18,6 @@ A modern, responsive personal portfolio website built with **Next.js**, **React*
 
 ---
 
-## 📸 Screenshots
-
-### Hero Section
-
-The landing page features an engaging hero section with smooth animations and a call-to-action.
-
-![Hero Section](./public/picture5.png)
-
 ### Navigation
 
 - **Desktop**: Clean navigation bar with language toggle switch
@@ -304,15 +296,6 @@ Works with any platform supporting Next.js:
 - Project Management (Agile/Scrum)
 - Machine Learning & Computer Vision
 - Frontend Development (React, Next.js)
-
----
-
-## 📞 Contact
-
-- **Email**: [Your Email]
-- **LinkedIn**: [Your LinkedIn]
-- **GitHub**: [Your GitHub]
-- **Portfolio**: [Your Portfolio URL]
 
 ---
 
