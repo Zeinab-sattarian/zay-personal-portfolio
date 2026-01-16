@@ -121,13 +121,16 @@ export default function Navigation({
         <ul>
           <li className="secondary language-select">
             <button
+              className={`lang-switch ${router.locale === "en" ? "en" : "fr"}`}
               onClick={() => {
                 const r = router;
                 const next = r.locale === "en" ? "fr" : "en";
                 r.push(r.pathname, r.asPath, { locale: next });
               }}
             >
-              {router.locale === "en" ? "FR" : "EN"}
+              <span className="lang-switch-track">
+                <span className="lang-switch-label">{router.locale === "en" ? "EN" : "FR"}</span>
+              </span>
             </button>
           </li>
         </ul>
@@ -165,13 +168,16 @@ export default function Navigation({
             </li>
             <li className="secondary language-select">
               <button
+                className={`lang-switch ${router.locale === "en" ? "en" : "fr"}`}
                 onClick={() => {
                   const r = router;
                   const next = r.locale === "en" ? "fr" : "en";
                   r.push(r.pathname, r.asPath, { locale: next });
                 }}
               >
-                {router.locale === "en" ? "FR" : "EN"}
+                <span className="lang-switch-track">
+                  <span className="lang-switch-label">{router.locale === "en" ? "EN" : "FR"}</span>
+                </span>
               </button>
             </li>
           </ul>
@@ -245,22 +251,59 @@ export default function Navigation({
         nav ul li.secondary.language-select {
           position: relative;
         }
-        nav ul li.secondary.language-select button {
+        nav ul li.secondary.language-select button.lang-switch {
           border: none;
           background: none;
           font-family: Visby, -apple-system, BlinkMacSystemFont, "Segoe UI",
             Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
           font-style: normal;
-          font-weight: 300;
-          font-size: 0.9vw;
-          line-height: 128%;
-          color: rgba(255, 255, 255, 0.7);
-          transition: 0.15s all;
+          font-weight: 400;
           cursor: pointer;
-          font-size: min(1.4vw, 13pt);
+          padding: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
-        nav.sticky.dim ul li.secondary.language-select button,
-        nav ul li.secondary.language-select button:hover {
+        
+        nav ul li.secondary.language-select .lang-switch-track {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 50px;
+          height: 26px;
+          background: rgba(255, 255, 255, 0.2);
+          border-radius: 13px;
+          border: 1px solid rgba(255, 255, 255, 0.3);
+          transition: all 0.3s ease;
+          position: relative;
+        }
+        
+        nav ul li.secondary.language-select button.lang-switch.en .lang-switch-track {
+          background: rgba(255, 255, 255, 0.2);
+        }
+        
+        nav ul li.secondary.language-select button.lang-switch.fr .lang-switch-track {
+          background: rgba(255, 255, 255, 0.3);
+        }
+        
+        nav ul li.secondary.language-select .lang-switch-label {
+          font-size: min(1.2vw, 11pt);
+          color: rgba(255, 255, 255, 0.8);
+          font-weight: 500;
+          letter-spacing: 0.5px;
+        }
+        
+        nav ul li.secondary.language-select button:hover .lang-switch-track {
+          background: rgba(255, 255, 255, 0.3);
+          border-color: rgba(255, 255, 255, 0.5);
+        }
+        
+        nav.sticky.dim ul li.secondary.language-select button:hover .lang-switch-track {
+          background: rgba(0, 0, 0, 0.1);
+          border-color: var(--title-color);
+        }
+        
+        nav.sticky.dim ul li.secondary.language-select .lang-switch-label {
           color: var(--title-color);
         }
         nav ul li.secondary.language-select div {
@@ -617,7 +660,7 @@ export default function Navigation({
           }
 
           /* Make mobile language toggle button compact and appropriately sized */
-          nav .mobile-menu ul li.secondary.language-select button {
+          nav .mobile-menu ul li.secondary.language-select button.lang-switch {
             border: none;
             background: none;
             font-family: Visby, -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -625,34 +668,60 @@ export default function Navigation({
               "Segoe UI Emoji";
             font-style: normal;
             font-weight: 400;
-            font-size: 14px;
-            line-height: 20px;
-            color: #ffffffcc;
-            padding: 6px 12px;
+            padding: 0;
             width: auto;
             height: auto;
             display: flex;
             align-items: center;
             justify-content: center;
             cursor: pointer;
+            margin-bottom: 20px;
           }
 
-          nav.dim .mobile-menu ul li.secondary.language-select button:hover {
+          nav .mobile-menu ul li.secondary.language-select .lang-switch-track {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 26px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 13px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s ease;
+          }
+
+          nav .mobile-menu ul li.secondary.language-select button.lang-switch.en .lang-switch-track {
+            background: rgba(255, 255, 255, 0.2);
+          }
+
+          nav .mobile-menu ul li.secondary.language-select button.lang-switch.fr .lang-switch-track {
+            background: rgba(255, 255, 255, 0.3);
+          }
+
+          nav .mobile-menu ul li.secondary.language-select .lang-switch-label {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.8);
+            font-weight: 500;
+            letter-spacing: 0.5px;
+          }
+
+          nav .mobile-menu ul li.secondary.language-select button:hover .lang-switch-track {
+            background: rgba(255, 255, 255, 0.3);
+            border-color: rgba(255, 255, 255, 0.5);
+          }
+
+          nav.dim .mobile-menu ul li.secondary.language-select button:hover .lang-switch-track {
+            background: rgba(0, 0, 0, 0.1);
+            border-color: var(--title-color);
+          }
+
+          nav.dim .mobile-menu ul li.secondary.language-select .lang-switch-label {
             color: var(--title-color);
           }
 
-          nav.dim .mobile-menu ul li.secondary.language-select select {
-            color: #00000066;
-          }
-
           nav .mobile-menu ul li.secondary.language-select:after {
-            content: "▼";
-            transform: scaleY(0.7);
-            position: absolute;
-            right: 16px;
-            pointer-events: none;
-            top: 8px;
-            color: #888888;
+            content: "";
+            display: none;
           }
         }
 
